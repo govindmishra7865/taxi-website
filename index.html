@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Taxi Service - Mumbai</title>
+  <title>Three Brothers Tour and Travel - Maharashtra</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
     body { line-height: 1.6; background: #f4f4f4; }
@@ -20,6 +20,31 @@
       text-decoration: none;
       border-radius: 5px;
     }
+
+    .slider {
+      position: relative;
+      max-width: 100%;
+      height: 200px;
+      overflow: hidden;
+      margin: 20px auto;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 9s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
     section { padding: 30px 20px; }
     section h2 { margin-bottom: 10px; font-size: 22px; }
     section p, ul { font-size: 15px; color: #333; }
@@ -37,18 +62,20 @@
     @media (max-width: 600px) {
       .hero h1 { font-size: 22px; }
       .btn-group a { padding: 10px 16px; font-size: 14px; }
+      .slider { height: 150px; }
+      .slides img { height: 150px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🚖 Mumbai Taxi Service</h1>
+    <h1>🚖 Three Brothers Tour and Travel</h1>
     <p>24x7 Reliable & Affordable Rides</p>
   </header>
 
   <div class="hero">
-    <h1>Book Your Taxi in Mumbai</h1>
+    <h1>Book Your Taxi in Maharashtra</h1>
     <p>Airport drop, Outstation, Hourly Packages — Safe & On-time</p>
     <div class="btn-group">
       <a href="tel:+919137500480">📞 Call Now</a>
@@ -56,9 +83,18 @@
     </div>
   </div>
 
+  <!-- Image Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="https://via.placeholder.com/600x200?text=Comfortable+Rides" alt="Slide 1">
+      <img src="https://via.placeholder.com/600x200?text=Outstation+Tours" alt="Slide 2">
+      <img src="https://via.placeholder.com/600x200?text=Airport+Pickup" alt="Slide 3">
+    </div>
+  </div>
+
   <section>
     <h2>About Us</h2>
-    <p>We offer clean, AC taxis with professional drivers in Dehradun & nearby areas. Trusted by 1,000+ happy customers.</p>
+    <p>We offer clean, AC taxis with professional drivers in Maharashtra & nearby areas. Trusted by 1,000+ happy customers.</p>
   </section>
 
   <section>
@@ -66,7 +102,7 @@
     <ul>
       <li>Local City Ride (Rs. 11/km)</li>
       <li>Airport Drop / Pickup</li>
-      <li>Outstation Tours (Mussoorie, Rishikesh, Haridwar)</li>
+      <li>Outstation Tours (Lonavala, Pune, Nashik, etc.)</li>
       <li>Hourly Rental for Business or Family Travel</li>
     </ul>
   </section>
@@ -75,11 +111,11 @@
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> <a href="tel:+919137500480">+91 91375 00480</a></p>
     <p><strong>WhatsApp:</strong> <a href="https://wa.me/919137500480" target="_blank">Chat on WhatsApp</a></p>
-    <p><strong>Location:</strong> Mumbai, Maharastra</p>
+    <p><strong>Location:</strong> Maharashtra, India</p>
   </section>
 
   <footer>
-    &copy; 2025 Mumbai Taxi Service. All Rights Reserved.
+    &copy; 2025 Three Brothers Tour and Travel. All Rights Reserved.
   </footer>
 
 </body>
